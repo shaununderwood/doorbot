@@ -21,18 +21,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:davglass/doorbot.git"
+    "url": "git@github.com:shaununderwood/doorbot.git"
   },
   "keywords": [
     "ring",
     "doorbell"
   ],
-  "author": "Dav Glass <davglass@gmail.com>",
+  "author": "Shaun Underwood",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/davglass/doorbot/issues"
+    "url": "https://github.com/shaununderwood/doorbot/issues"
   },
-  "homepage": "https://github.com/davglass/doorbot",
+  "homepage": "https://github.com/shaununderwood/doorbot",
   "devDependencies": {
     "eslint": "^3.12.2",
     "jenkins-mocha": "^4.1.0",
