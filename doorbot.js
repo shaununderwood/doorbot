@@ -191,6 +191,25 @@ class Doorbot {
         const url = `/doorbots/history?limit=${limit}`;
         this.simpleRequest(url, 'GET', callback);
     }
+    
+    history_more(config, callback) {
+    /*
+        config: {
+            limit: 100,     // max 100 - their api doesn't allow any more
+            older_then: '', // last history.id from which to go back further
+        }
+    */
+        let url = '/doorbots';
+        if ( config.doorbot_id ){
+            url+= '/' + config.doorbot_id;
+        }
+        url+= '/history';
+        url+= '?limit=' + ( config.limit || 100 );
+        url+= '&older_than=' + ( config.older_than || '' );
+
+        this.simpleRequest(url, 'GET', callback);
+    }
+
 
     dings(callback) {
         this.simpleRequest('/dings/active', 'GET', callback);
